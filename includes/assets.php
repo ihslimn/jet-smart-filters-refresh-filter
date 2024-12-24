@@ -11,13 +11,16 @@ if ( ! defined( 'WPINC' ) ) {
 
 class Assets {
 
+	public function __construct() {
+		add_action( 'wp_enqueue_scripts', array( $this, 'frontend' ) );
+	}
+
 	public function frontend() {
-		wp_enqueue_script(
+		wp_register_script(
 			'jet-engine-refresh-filter-frontend',
 			Plugin::instance()->get_url( '/assets/js/frontend.js' ),
 			array( 'jet-plugins' ),
-			Plugin::instance()->version,
-			true
+			Plugin::instance()->version
 		);
 	}
 

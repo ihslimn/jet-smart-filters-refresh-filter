@@ -3,7 +3,7 @@
  * Plugin Name: JetSmartFilters - Refresh Filter
  * Plugin URI:  
  * Description: 
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      
  * Author URI:  
  * Text Domain: 

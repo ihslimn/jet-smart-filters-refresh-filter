@@ -98,8 +98,6 @@ class Refresh_Filter extends \Elementor\Jet_Smart_Filters_Base_Widget {
 	}
 
 	protected function render() {
-		jet_smart_filters_refresh_filter()->assets->frontend();
-
 		jet_smart_filters()->set_filters_used();
 
 		$this->add_render_attribute(
